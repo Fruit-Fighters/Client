@@ -1,0 +1,25 @@
+{
+  "name": "Fruit Fighters",
+  "version": "1.0.0",
+  "description": "The ISB Fruit Fighters Server Code",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fruit-Fighters/Client.git"
+  },
+  "keywords": [
+    "Electron"
+  ],
+  "author": "ravinder-Olivier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fruit-Fighters/Client/issues"
+  },
+  "homepage": "https://github.com/Fruit-Fighters/Client#readme",
+  "devDependencies": {
+    "electron": "^21.1.0"
+  }
+  }
