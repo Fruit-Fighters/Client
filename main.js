@@ -1,4 +1,7 @@
-const { app, BrowserWindow } = require('electron');
+const electron = require ('electron')  // imports electron
+const {app} = electron // imports menu and tray modules
+const BrowserWindow = electron.BrowserWindow // calls browser window for use
+let mainWindow;
 
 app.whenReady().then(() => {
     createWindow()
