@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/Fruit-Fighters/Client#readme",
   "devDependencies": {
-    "electron": "^21.1.0"
+    "electron": "^21.1.1",
+    "eslint": "^8.25.0",
+    "eslint-plugin-react": "^7.31.10"
   }
-  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings</title>
+</head>
+<body>
+    <div>
+        <h1 style="color: green;">
+          Hello : This is Settings window
+        </h1>
+        <button onclick="goToFirstWindow()">
+          Go to Main Window
+        </button>
+    </div>
+</body>
+<script>
+    const remote = window.require("electron").remote;
+  
+  function goToFirstWindow() {
+    //code for some other action to be performed
+    
+    //Code to close the window after doing other actions
+    remote.getCurrentWindow().close();
+  }
+</script>
+</html>
