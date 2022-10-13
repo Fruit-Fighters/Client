@@ -20,18 +20,18 @@ jobs:
     - name: electron mac os security identities
       run: security find-identity -v
     - name: Install dependencies
-      run: yarn install
+      run: npm install
     - name: Build on MacOS
       env:
         ELECTRON: true
         APP_VERSION_NUMBER: 0.5.9
-      run: yarn build
+      run: npm build
     - name: Build Electron
       env:
         ELECTRON: true
         CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
         APP_VERSION_NUMBER: 0.5.9
-      run: yarn electron:buildUnix
+      run: npm electron:buildUnix
     - name: see directory
       run: ls
     - name: check env
@@ -66,7 +66,7 @@ jobs:
     - name: Work around for Windows Server 2019
       run: set path=%path%;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin
     - name: Install dependencies
-      run: yarn install
+      run: npm install
     - name: check env
       env:
         ELECTRON: true
@@ -76,12 +76,12 @@ jobs:
       env:
         ELECTRON: true
         APP_VERSION_NUMBER: 0.5.9
-      run: yarn build
+      run: npm build
     - name: Build Electron
       env:
         ELECTRON: true
         APP_VERSION_NUMBER: 0.5.9
-      run: yarn electron:buildWin
+      run: npm electron:buildWin
     - name: see directory
       run: ls ./electron_dist/squirrel-windows
     - uses: lucyio/upload-to-release@master
